@@ -1,0 +1,137 @@
+/* 
+    Reaset All Elements
+*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+
+}
+body {
+    overflow-x: hidden;
+}
+/* 
+    Costmistion Form
+*/
+form {
+    background-color: #eee;
+    width: 80%;
+    margin: 10px auto;
+    padding: 15px 10px;
+}
+/* 
+    Costmistion Input Of Form
+*/
+form input:first-child {
+    width: 80%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+}
+/* 
+    Costmistion Second Input Of Form
+*/
+form input:last-child {
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+/* 
+    Costmistion Result Div
+*/
+.results {
+    margin: 10px auto;
+    width: 80%;
+    padding: 15px 20px;
+    background-color: #ccc;
+}
+/* 
+    Costmistion repos
+*/
+body .repos {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+/* 
+    Costmistion repos Children
+*/
+body .repos .spans span,
+body .repos .spans a {
+    padding: 6px  10px;
+    margin-right: 3px;
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+    background-color: green;
+}
+/* 
+    Costmistion repos Link
+*/
+body .repos .spans a {
+    background-color: crimson;
+}
+/* 
+    Costmistion notification error
+*/
+.fialld {
+    position: relative;
+    background-color: #eee;
+    padding: 30px;
+    text-align: center;
+    word-wrap: break-word;
+    width: fit-content;
+    margin: 30px auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+/* 
+    Costmistion notification error button
+*/
+.fialld button {
+    background-color: red;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    border: none;
+    outline: none;
+}
+@media (max-width: 768px) {
+    form input:first-child {
+        width: 60%;
+    }
+    form input:last-child {
+        font-size: 16px;
+    }
+    body .repos .spans span,
+    body .repos .spans a {
+        width: 55px;
+        font-size: 10px;
+    }
+    body .repoName{ 
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatch GitHub API</title>
+    <link rel="stylesheet" href="./css/nabowy.css">
+</head>
+<body>
+    <!-- Create Form To submit Request To get Data -->
+    <form action="">
+        <input type="text" placeholder="Github User Name">
+        <input type="submit" value="Get Repos">
+    </form>
+    <!-- Create A results div to save date insid it -->
+    <div class="results">
+        <div class="repos">No Data Found</div>
+    </div>
+    <!-- Create A Fialld  div to when user write a wrong repos -->
+    <div class="fialld">
+        <h2>We didn't Find any Repo Like This Name Please Write a Valid Repo Name</h2>
+        <button class="notification">X</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
